@@ -1,6 +1,6 @@
-# HackerRank Solutions
+# Top 10 HackerRank Problems and Solutions (acc. to me)
 
-> The repository contains the solutions to various HackerRank problems solved using C++ programmming language. Each solution includes a reference to the problem statement and is well-documented to explain the logic and approach. Below you can find the documentation of 10 different problems.
+> The repository contains the my top 10 HackerRanker Problems and its solution which are solved in C++. Each solution includes a reference to the problem statement and is well-documented to explain the logic and approach.
 
 ## 1. Problem 1
 - [View Problem Statement]()
