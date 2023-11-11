@@ -138,7 +138,7 @@ The problem is to find the number of pairs of array elements that have a differe
 3
 ```
 ****
-## 5. Mars Exploration
+## 6. Mars Exploration
 
 - [View Problem Statement](https://www.hackerrank.com/challenges/mars-exploration/problem?isFullScreen=true)
 - [View Solution](./mars-exploration.cpp) 
@@ -161,4 +161,106 @@ SOSSOTSOSSSS
 #### Sample Output to the function
 ```
 2
+```
+****
+## 7. HackerRank in a String!
+
+- [View Problem Statement](https://www.hackerrank.com/challenges/hackerrank-in-a-string/problem?isFullScreen=true)
+- [View Solution](./hackerrank.cpp) 
+
+#### Problem Explanation:
+The problem is to check if the word "hackerrank" is present in the given string in the correct subsequent order.
+
+#### Solution Approach:
+> - Intialise a string as "hackerrank"
+> - Now traverse through the given string and check if each letter of the hackerrank string is present in the given string one by one.
+> - Therefore also checking igf they are in the right order as well
+> - Once the first letter of hackerrank is found the given string, the pointer moves to the next letter of hackerrank while the pointer in the array keeps traversing until it find a match.
+> - Then the hackerrank pointer moves tot he next pointer and the search continues.
+
+#### Sample Input to the function
+```
+hhhaaaccckkkkerrrrannkk 
+```
+
+#### Sample Output to the function
+```
+YES
+```
+****
+## 8. Lonely Integer
+
+- [View Problem Statement](https://www.hackerrank.com/challenges/lonely-integer/problem?isFullScreen=true)
+- [View Solution](./lonely-int.cpp) 
+
+#### Problem Explanation:
+The problem is to find the unique element where all the other elements in the array occur twice.
+
+#### Solution Approach:
+> - Intially sort the array
+> - Now the if we traverse through the array, the  term and next term should be equal if its not a unique number
+> - If that condition fails, the term is unique.
+> - There is an edge case,
+>   - If the unique number is at the end, check if the last term and the second last term is equal
+>   - If not, that is the unique number
+
+#### Sample Input to the function
+```
+00121
+```
+
+#### Sample Output to the function
+```
+2
+```
+****
+## 9. Stock Maximize
+
+- [View Problem Statement](https://www.hackerrank.com/challenges/stockmax/problem?isFullScreen=true)
+- [View Solution](./stock-maximize.cpp) 
+
+#### Problem Explanation:
+The problem is to calculate the sum of all maximum profits when stocks are bought and sold in the mentioned array values.
+
+#### Solution Approach:
+> - Intially the selling pricing and max profit to zero
+> - Now, traverse through the array
+>   - Each time check if the current price is greater than the selling price set. If so, change the selling price to the current value
+> - And while traversing, calculate if there is any profit as a sum while traversing through the array. An return the max profit 
+
+#### Sample Input to the function
+```
+1312
+```
+
+#### Sample Output to the function
+```
+3
+```
+****
+## 10. New Year Chaos
+
+- [View Problem Statement](https://www.hackerrank.com/challenges/new-year-chaos/problem?isFullScreen=true)
+- [View Solution](./new-year-chaos.cpp) 
+
+#### Problem Explanation:
+The problem is to calculate the minimum number of swaps called bribes that took place to get to a given queue order in the given array. If the number of swaps by the element is greated than 2, return "Too chaotic"
+
+#### Solution Approach:
+> - Intially traverse through the array
+>   - check if each value is in a uniform progression
+>   - if not, atleast it is with a difference of 2 otherwise return "Too chaotic"
+> - Now, we need to return the number swaps from the original order to acheive the current orderof the given array
+> - To calculate that, we compare max 2 term before gratually with the current terms. 
+> - If it is swapped, it is greater. Therefore the swapped count increases. 
+> - Also a simple condition is also kept to not cross 0th index as we are starting from the last index and traversing to calculate the number of swaps
+
+#### Sample Input to the function
+```
+21534
+```
+
+#### Sample Output to the function
+```
+3
 ```
